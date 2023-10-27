@@ -130,7 +130,6 @@ section img {
 /* seccion del perro de la izquierda */
 .image-container-dog-left {
     width: 50%;
-    background-color: aqua;
     display: flex;
     justify-content: right;
     /* align-items: end; */
