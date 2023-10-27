@@ -1,7 +1,8 @@
+/* Estilos generales para todo el encabezado */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Puedes cambiar la fuente según tus preferencias */
+    font-family: "Lalezar", sans-serif;
 }
 
 header {
@@ -9,11 +10,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background: #8F52DC; /* Color morado */
+    font-family: "Lalezar", sans-serif;
+    font-size: 21px;
+    color: white;
 }
 
+
 .logo {
-    margin-left: 30px;
+    margin: 10px 0; /* 10px de margen arriba y abajo */
 }
+
 
 nav ul {
     list-style: none;
@@ -21,26 +28,42 @@ nav ul {
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .buttons {
-    margin-right: 40px;
+    margin: 0;
 }
 
+/* Estilo para los enlaces "Sobre nosotros" y "Búsqueda de mascota" */
+.menu-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Estilo específico para los botones "Iniciar sesión" y "Registrarse" */
 .button {
     background-color: black;
     color: white;
     padding: 10px 20px;
-    border: 2px solid white;
+    border: 3px solid white;
     text-decoration: none;
     margin-left: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* Añadir un efecto al pasar el cursor sobre los botones */
+.button:hover {
+    background: linear-gradient(to right, #8F52DC, #f1e129);
+    color: white;
 }
 
 section {
     display: flex;
     justify-content: center;
-    background-color: yellow;
+    background: #F1CB38; /* Color amarillo */
 }
 
 section img {
