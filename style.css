@@ -94,3 +94,117 @@ section img {
         margin-top: 4%;
     }
 }
+
+/* Tercera parte de la landing page */
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container div {
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.image-column {
+    margin-right: 15px;
+}
+
+/* contenerdores de los perros  */
+.dogs-container {
+    background-color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.inline-container {
+    display: inline-flex;
+}
+
+/* seccion del perro de la izquierda */
+.image-container-dog-left {
+    width: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: right;
+    /* align-items: end; */
+}
+.image-container-dog-left img {
+    width: 70%;
+}
+
+/* imagenes de los perros de la derecha */
+.image-container-dog-right {
+    width: 50%;
+}
+
+.image-dog-top {
+    padding-bottom: 10px;
+}
+
+.image-dog-bottom {
+    padding-top: 10px;
+}
+
+.image-dog-top, .image-dog-bottom {
+    display: flex;
+    padding-left: 30px;
+}
+
+.image-container-dog-right img {
+    width: 50%;
+}
+
+/* seccion de los testimonios */
+.testimonials {
+    background-color: #E8D9FB;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.testimonials h1 {
+    font-family:Lalezar;
+    color: #8F52DC;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-box-left {
+    margin-right: 35px;
+}
+
+.testimonial-box-right {
+    margin-left: 35px;
+}
+
+.testimonial-box-left, .testimonial-box-right {
+    background-color: #FFFFFF;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 270px;
+
+    & img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    & p {
+        font-family: 'Inter';
+        font-size: 14px;
+    }
+}
