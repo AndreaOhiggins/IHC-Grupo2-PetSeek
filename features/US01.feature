@@ -10,6 +10,9 @@ Feature: US10: Chat privado
 
 Feature: US11: Notificación de posible mascota  
 
+   Como usuario quiero recibir notificaciones para obtener todas 
+   las similitudes posibles y verificarlas.
+
   Scenario: E01 - Notificación de similitudes
     Given que el usuario ha publicado la foto y descripción de su mascota perdida
     And el sistema ha buscado todas las similitudes posibles
@@ -18,6 +21,9 @@ Feature: US11: Notificación de posible mascota
 
 
 Feature: US12: Ver detalles de mascota en el mapa
+
+Como usuario registrado de la aplicación “PetSeek”, quiero poder ver los 
+detalles de una mascota en el mapa para obtener más información sobre ella. 
 
   Scenario: E01 - Visualización de Detalles Básicos
     Given que estoy en el Mapa de Mascotas
@@ -32,6 +38,9 @@ Feature: US12: Ver detalles de mascota en el mapa
     Then veo la foto de la mascota en la ventana emergente
 
 Feature: US13: Filtrar la búsqueda de gatos, perros u otros.
+
+Como usuario de la aplicación “PetSeek”, quiero tener la capacidad de filtrar la 
+búsqueda de mascotas en el mapa de mascotas para ver solo gatos, perros y otros animales acuerdo a mis preferencias. 
 
   Scenario: E01 - Filtrar Mascotas por Gatos
     Given que estoy en el Mapa de Mascotas
