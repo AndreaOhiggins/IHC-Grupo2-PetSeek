@@ -8,6 +8,7 @@ Feature: US11: Notificación de posible mascota
     And el sistema ha buscado todas las similitudes posibles
     When aparezca en su pantalla una notificación
     Then podrá acceder a ella directamente haciéndole clic o seleccionando la bandeja de entrada para visualizar toda la lista de reportes encontrados
+
   Examples:
   | User    | Notification Access Method   |
   | Ricardo | Clicking on the notification |
