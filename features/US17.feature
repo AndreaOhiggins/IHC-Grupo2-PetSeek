@@ -4,9 +4,9 @@ Feature: Visualización de enlaces de contacto
     y noticias de la empresa en mis plataformas de redes sociales favoritas.
     
 Scenario: Filtrar Mascotas por Gatos
-    Given que soy un <usuario> dentro de la aplicación,
+    Given que soy un <usuario> dentro de la aplicación
     When acceda a la <sección de contactos>
-    Then debería poder encontrar <enlaces> visibles a las redes sociales de la empresa.
+    Then debería poder encontrar <enlaces> visibles a las redes sociales de la empresa
 Examples: 
     | usuario | sección de contactos |            enlaces           |
     |  María  |           sí         | redes sociales de la empresa | 
