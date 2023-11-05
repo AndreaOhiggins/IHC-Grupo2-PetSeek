@@ -7,6 +7,6 @@ Scenario: Visualizar el principal propósito de la plataforma
     When visualiza la <primera sección> de la página
     Then encontrará una <sección informativa> del aplicativo como el logo, enlaces principales de la landing page e imágenes referentes a sus funcionalidades.
 Examples:
-    | usuario | primera sección | seccion informativa del aplicativo |
+    | usuario | primera sección | sección informativa del aplicativo |
     |  María  |       sí        | logo, enlaces principales, imagenes| 
-    
+     
