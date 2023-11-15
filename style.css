@@ -1,7 +1,8 @@
+/* Estilos generales para todo el encabezado */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Puedes cambiar la fuente según tus preferencias */
+    font-family: "Lalezar", sans-serif;
 }
 
 header {
@@ -9,11 +10,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background: #8F52DC; /* Color morado */
+    font-family: "Lalezar", sans-serif;
+    font-size: 21px;
+    color: white;
 }
 
+
 .logo {
-    margin-left: 30px;
+    margin: 10px 0; /* 10px de margen arriba y abajo */
 }
+
 
 nav ul {
     list-style: none;
@@ -21,26 +28,42 @@ nav ul {
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 .buttons {
-    margin-right: 40px;
+    margin: 0;
 }
 
+/* Estilo para los enlaces "Sobre nosotros" y "Búsqueda de mascota" */
+.menu-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Estilo específico para los botones "Iniciar sesión" y "Registrarse" */
 .button {
     background-color: black;
     color: white;
     padding: 10px 20px;
-    border: 2px solid white;
+    border: 3px solid white;
     text-decoration: none;
     margin-left: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+/* Añadir un efecto al pasar el cursor sobre los botones */
+.button:hover {
+    background: linear-gradient(to right, #8F52DC, #f1e129);
+    color: white;
 }
 
 section {
     display: flex;
     justify-content: center;
-    background-color: yellow;
+    background: #F1CB38; /* Color amarillo */
 }
 
 section img {
@@ -130,7 +153,6 @@ section img {
 /* seccion del perro de la izquierda */
 .image-container-dog-left {
     width: 50%;
-    background-color: aqua;
     display: flex;
     justify-content: right;
     /* align-items: end; */
@@ -207,4 +229,168 @@ section img {
         font-family: 'Inter';
         font-size: 14px;
     }
+
 }
+
+
+.buttons_download {
+    background-color: #f1e129;
+    padding: 10px;
+    text-align: center;
+}
+
+.buttons_download h1 {
+    font-family: Lalezar;
+}
+
+.buttonD-container {
+    display: flex;
+    justify-content: center;  
+    gap: 40px;  
+    margin-bottom: 20px;  
+}
+.buttonD {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.buttonD img {
+    max-width: 100%;
+    width:  500px;  
+    height: 100px; 
+}
+
+.buttonSocial-container {
+    display: flex;
+    justify-content: center;  
+    gap: 25px;  
+    margin-bottom: 10px;  
+}
+.buttonSocial {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: center; 
+}
+
+.buttonSocial img  {
+    max-width: 100%;
+    width:  50px;  
+    height: 50px; 
+}
+
+.footer {
+    font-family: Inter;
+    background-color: purple;
+    color: white;
+    text-align: left;
+    height: auto;  
+    line-height: 27px; /* Establece la altura de línea a 10px */
+}
+
+
+.menu .destacado {
+    font-family: Lalezar;
+    font-size: 35px; /* Tamaño de fuente más grande para el texto destacado */
+     
+}
+.social .destacado {
+    font-family: Lalezar;
+    font-size: 35px; /* Tamaño de fuente más grande para el texto destacado */
+     
+}
+.contact .destacado {
+    font-family: Lalezar;
+    font-size: 35px; /* Tamaño de fuente más grande para el texto destacado */
+     
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image {
+    flex: 1;
+    position: relative;
+    padding: 40px;
+}
+
+.image img {
+    max-width: 100%;
+    width: auto; /* Ancho de 20px */
+    height: auto; /* Altura de 15px */
+    
+}
+
+.menu, .social, .contact {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.menu ul, .social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu a, .social a {
+    color: white;
+    text-decoration: none;
+}
+
+.divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 9px;
+    width: 2px;
+    background-color: white;
+}
+
+
+.contact {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.input-container {
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+ 
+.contact input {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    position: relative
+}
+
+

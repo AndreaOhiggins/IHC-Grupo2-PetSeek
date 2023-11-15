@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -16,16 +16,17 @@
     <title>Tu Página Web</title>
 </head>
 <body>
-    <header style="background-color: purple;">
+     <header>
         <div class="logo">
             <a href="enlace_del_logo.html">
-                <img src="https://i.ibb.co/Rb87Y38/Rectangle-26.png" alt="Logo">
+                <img src="https://i.ibb.co/Rb87Y38/Rectangle-26.png" alt="Logo" width="100">
+
             </a>
         </div>
         <nav>
             <ul>
-                <li><a href="sobre_nosotros.html" style="color: white;">Sobre nosotros</a></li>
-                <li><a href="busqueda_mascota.html" style="color: white;">Búsqueda de mascota</a></li>
+                <li><a class="menu-link" href="sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a class="menu-link" href="busqueda_mascota.html">Búsqueda de mascota</a></li>
             </ul>
         </nav>
         <div class="buttons">
@@ -33,12 +34,12 @@
             <a href="registrarse.html" class="button">Registrarse</a>
         </div>
     </header>
-    <section style="background-color: #f1e129;">
-        <img src="https://i.ibb.co/r2D3nwg/image-2.png" height="250" width="300" alt="center">
-        <img src="https://i.ibb.co/zXTrCyd/palabb-2.png" height="250" width="300" alt="center">
+    <section>
+        <img src="https://i.ibb.co/r2D3nwg/image-2.png" height="250" width="350" alt="center">
+        <img src="https://i.ibb.co/zXTrCyd/palabb-2.png" height="250" width="350" alt="center">
     </section>
 
-    <section id="conjuntoC">
+    <div id="conjuntoC">
         <div class="programas">
             <div class="carta">
                 <i class="fa-solid fa-shield-dog"></i>
@@ -54,38 +55,87 @@
                 <p>Contribuye a la comunidad compartiendo fotos de animales perdidos.</p>
             </div>
         </div>
-    </section>
-    <section>
-      <div class="inline-container">
-        <div style="display: inline-flex;">
-            <div class="image-container-dog-left">
-                <img src="dog1.jpeg" alt="user taking photo of a dog">
-            </div>
-            <div class="image-container-dog-right">
-                <div class="image-dog-top">
-                    <img src="dog2.jpg" alt="dog photo">
+    </div>
+    
+    <div class="inline-container">
+      <div style="display: inline-flex;">
+          <div class="image-container-dog-left">
+              <img src="https://github.com/AndreaOhiggins/IHC-Grupo2-PetSeek/blob/master/dog1.jpeg?raw=true" alt="user taking photo of a dog">
+          </div>
+          <div class="image-container-dog-right">
+              <div class="image-dog-top">
+                  <img src="https://github.com/AndreaOhiggins/IHC-Grupo2-PetSeek/blob/master/dog2.jpg?raw=true" alt="dog photo">
+              </div>
+              <div class="image-dog-bottom">
+                  <img src="https://github.com/AndreaOhiggins/IHC-Grupo2-PetSeek/blob/master/dog3.jpeg?raw=true" alt="dog photo">
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="testimonials">
+      <div>
+          <h1>Testimonios</h1>
+      </div>
+      <div style="font-family:Inter; display: flex; justify-content: center;">
+          <div class="testimonial-box-left">
+              <img src="https://github.com/AndreaOhiggins/IHC-Grupo2-PetSeek/blob/master/foto-perfil1.jpeg?raw=true" alt="foto de perfil"/>
+              <p>Utilizamos la tecnología de inteligencia artificial para buscar a tu mascota.</p>
+          </div>
+          <div class="testimonial-box-right">
+              <img src="https://github.com/AndreaOhiggins/IHC-Grupo2-PetSeek/blob/master/foto-perfil2.jpg?raw=true" alt="foto de perfil"/>
+              <p>Utilizamos la tecnología de inteligencia artificial para buscar a tu mascota.</p>
+          </div>
+      </div>
+  </div>
+
+
+<div class="buttons_download">
+    <h1>Descárgalo ya en:</h1>
+    <div class="buttonD-container">
+        <a href="APPstore.html" class="buttonD"><img src="APPstore.jpg" alt="APPstore_boton"></a>
+        <a href="Google Play.html" class="buttonD"><img src="Google Play.png" alt="GooglePlay_boton"></a>
+    </div>
+</div>
+
+ 
+<footer class="footer">
+    <div class="footer-container">
+        <div class="image">
+            <img src="PETSEEK.png" alt="PETSEEK_logo">
+        </div>
+        <div class="menu">
+            <p><span class="destacado">Menú</span></p>
+            <ul>
+                <li><a href="Sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="Búsqueda_mascota.html">Búsqueda de mascotas</a></li>
+            </ul>
+            <div class="divider"></div>
+        </div>
+
+
+        <div class="social">
+            <p><span class="destacado">Síguenos en:</span></p>
+                <div class="buttonSocial-container">
+                    <a href="Instagram.html" class="buttonSocial"><img src="instagram.png" alt="Instagram_boton"></a>
+                    <a href="Twitter.html" class="buttonSocial"><img src="twitter.png" alt="Twitter_boton"></a>
+                    <a href="Facebook.html" class="buttonSocial"><img src="facebook.png" alt="Facebook_boton"></a>
                 </div>
-                <div class="image-dog-bottom">
-                    <img src="dog3.jpeg" alt="dog photo">
-                </div>
+
+            </ul>
+            <div class="divider"></div>
+        </div>
+
+
+        <div class="contact">
+            <p><span class="destacado">Contáctanos</span></p>
+            <div class="input-container">
+                <input type="text" id="correo" name="correo" placeholder="Ingresa tu correo">
+                <img src="correo.png" alt="Correo Icon">
             </div>
         </div>
     </div>
-    <div class="testimonials">
-        <div>
-            <h1>Testimonios</h1>
-        </div>
-        <div style="font-family:Inter; display: flex; justify-content: center;">
-            <div class="testimonial-box-left">
-                <img src="foto-perfil1.jpeg" alt="foto de perfil"/>
-                <p>Utilizamos la tecnología de inteligencia artificial para buscar a tu mascota.</p>
-            </div>
-            <div class="testimonial-box-right">
-                <img src="foto-perfil2.jpg" alt="foto de perfil"/>
-                <p>Utilizamos la tecnología de inteligencia artificial para buscar a tu mascota.</p>
-            </div>
-        </div>
-    </div>
-    </section>
+</footer>
+
+
 </body>
 </html>
