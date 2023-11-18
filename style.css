@@ -123,69 +123,47 @@ section img {
     margin-top: 100px;
 }
 
-/* .image-container {
-    display: flex;
-    align-items: center;
-}
-
-.image-container div {
-    margin-right: 20px;
-}
-
-.image-container img {
-    width: 200px;
-    height: auto;
-    margin-bottom: 10px;
-}
-.image-column {
-    margin-right: 15px;
-} */
-
 /* contenerdores de los perros  */
-/* .dogs-container {
+.dogs-container {
     background-color: #FFFFFF;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
     justify-content: center;
-} */
-
-/* .inline-container {
-    display: inline-flex;
-} */
-
-/* seccion del perro de la izquierda */
-/* .image-container-dog-left {
-    width: 50%;
-    display: flex;
-    justify-content: right;
-    
-}
-.image-container-dog-left img {
-    width: 70%;
-} */
-
-/* imagenes de los perros de la derecha */
-/* .image-container-dog-right {
-    width: 50%;
+    gap: 15px;
 }
 
-.image-dog-top {
-    padding-bottom: 10px;
+/* seccion de los contenedores de perros*/
+.image-container-dog-left{
+  width: 48%; /* Ancho de cada dog-box */
+  box-sizing: border-box;
+}
+.image-container-dog-right {
+  width: 31%; /* Ancho de cada dog-box */
+  box-sizing: border-box;
 }
 
-.image-dog-bottom {
-    padding-top: 10px;
+/* seccion de las imágenes de perros*/
+.image-container-dog-left img{
+    max-width: 100%;
+    height: auto;
+}
+.image-container-dog-right img{
+    max-width: 100%;
+    height: auto;
 }
 
-.image-dog-top, .image-dog-bottom {
-    display: flex;
-    padding-left: 30px;
+/* responsive */
+@media screen and (max-width: 768px) {
+  .dogs-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-container-dog-left,
+  .image-container-dog-right {
+    width: 60%;
+  }
 }
-
-.image-container-dog-right img {
-    width: 50%;
-} */
 
 /* seccion de los testimonios */
 .testimonials {
@@ -194,52 +172,23 @@ section img {
     padding-bottom: 30px;
 }
 
+/* titulo */
 .testimonials h1 {
     font-family:Lalezar;
     color: #8F52DC;
     text-align: center;
+    margin-bottom: 50px;
 }
 
-.testimonials-box {
-    font-family: Inter;
-    display: flex;
-    justify-content: center;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-
-    
+/* contenedor de los testimonios */
+.testimonials-container {
+  font-family: Inter;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
-.testimonial-container {
-    display: flex;
-    justify-content: center;
-}
-
-.testimonial-box-left {
-    margin-right: 35px;
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
-    transition: 0.3s;
-}
-
-.testimonial-box-right {
-    margin-left: 35px;
-}
-
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container
-  .container {
-    padding: 2px 16px;
-  } */
+/* seccion de los box de los testimonios */
 
 .testimonial-box-left, .testimonial-box-right {
     background-color: #FFFFFF;
@@ -248,8 +197,8 @@ section img {
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    width: 400px;
-
+    width: 40%; /* Ancho de cada testimonial-box */
+    box-sizing: border-box;
 
     & img {
         border-radius: 50%;
@@ -262,11 +211,44 @@ section img {
     & p {
         font-family: 'Inter';
         font-size: 14px;
+        color: #000;
     }
 
+    & .box-title{
+        font-size: 18px; 
+        font-weight: 800; 
+        color: #000;
+    }
     
-
+    & .user-testimonial{
+        font-size: 14px; 
+        font-weight: 600; 
+        color: grey;
+    }
 }
+
+/* seccion de las imágenes de los testimonios */
+.testimonial-box-left img,
+.testimonial-box-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  .testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-box-left,
+  .testimonial-box-right {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
 
 .testimonial-box-left:hover, .testimonial-box-right:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
