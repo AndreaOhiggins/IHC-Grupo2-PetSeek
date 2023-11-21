@@ -107,7 +107,6 @@ section img {
 }
 
 /*-------------------caracteristicas-----------------------------*/
-
 #conjuntoC {
   background-color: rgb(232, 217, 251);
   color: black;
@@ -458,3 +457,4 @@ input[type="text"] {
   margin-top: 10px;
   position: relative;
 }
+
