@@ -71,7 +71,7 @@ section {
 
 /* Estilo para las imágenes dentro de la sección */
 section img {
-  margin: 10px; /* Margen alrededor de las imágenes */
+  margin: 20px 80px; /* Margen alrededor de las imágenes */
   max-width: 100%;
   height: auto;
 }
