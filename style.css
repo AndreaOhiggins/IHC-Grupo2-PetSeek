@@ -43,6 +43,7 @@ nav li {
   /* font-weight: bold; */
   font-size: 30px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Estilo específico para los botones "Iniciar sesión" y "Registrarse" */
@@ -456,6 +457,8 @@ section img {
   display: flex;
   align-items: center;
   width: 250px;
+  cursor: pointer;
+
   & span{
     padding-left: 50px;
     color: white;
@@ -477,6 +480,8 @@ section img {
   }
 
 }
+
+
 
 input[type="text"] {
   width: 100%;
@@ -505,3 +510,16 @@ input[type="text"] {
   position: relative;
 }
 
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  background-color: black;
+  color: #fff;
+  padding: 10px 15px 0px 15px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  z-index: 999;
+}

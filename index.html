@@ -17,9 +17,10 @@
     <title>PetSeek</title>
 </head>
 <body>
-     <header>
+     <!--- put responsive navbar with hamburger menu -->
+    <header>
         <div class="logo">
-            <a href="enlace_del_logo.html">
+            <a href="index.html">
                 <img src="https://i.ibb.co/MhSDPJR/image-23.pngR" alt="Logo" width="125">
 
             </a>
@@ -31,7 +32,7 @@
                 <li><a class="menu-link" href="#testimonios">Testimonios</a></li>       
          </nav>
         <div class="buttons">
-            <a href="iniciar_sesion.html" class="button">Iniciar sesión</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="login.html" class="button">Iniciar sesión</a>&nbsp;&nbsp;&nbsp;&nbsp;
             <a href="registrarse.html" class="button">Registrarse</a>
         </div>
     </header>
@@ -135,6 +136,7 @@
     </div>
 
     <!-- ----------------------------------------------------------- --> 
+    <div class="scroll-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></div>
     
     <footer class="footer">
         <div class="footer-container">
@@ -167,11 +169,11 @@
     
             <div class="contact">
                 <p><span class="destacado">Contáctanos</span></p>
-                <div class="input-container">
+                <div class="input-container" onclick="openContactPage()" >
                     <i class="fa-regular fa-envelope"></i>
-                    <a href="otra_pagina.html">
+                    <div>
                         <span>Contáctanos aquí</span>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>  
@@ -179,4 +181,6 @@
     </footer>
     
 </body>
+
+<script src="script.js"></script>
 </html>
