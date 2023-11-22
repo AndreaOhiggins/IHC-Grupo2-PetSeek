@@ -30,6 +30,7 @@ nav ul {
 
 nav li {
   margin: 10px 0;
+  padding: 0 70px;
 }
 
 .buttons {
@@ -39,8 +40,10 @@ nav li {
 /* Estilo para los enlaces "Sobre nosotros" y "Búsqueda de mascota" */
 .menu-link {
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 30px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Estilo específico para los botones "Iniciar sesión" y "Registrarse" */
@@ -48,7 +51,6 @@ nav li {
   background-color: black;
   color: white;
   padding: 10px 20px;
-  border: 3px solid white;
   text-decoration: none;
   margin: 10px 0;
   font-weight: bold;
@@ -70,7 +72,7 @@ section {
 
 /* Estilo para las imágenes dentro de la sección */
 section img {
-  margin: 10px; /* Margen alrededor de las imágenes */
+  margin: 20px 80px; /* Margen alrededor de las imágenes */
   max-width: 100%;
   height: auto;
 }
@@ -111,7 +113,13 @@ section img {
   background-color: rgb(232, 217, 251);
   color: black;
   text-align: center;
-  padding: 30px 0;
+  padding: 80px 0;
+}
+#conjuntoC h1 {
+  font-family: Lalezar;
+  color: #8f52dc;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 #conjuntoC i {
@@ -121,17 +129,18 @@ section img {
 #conjuntoC .carta {
   background-position: center center;
   background-size: cover;
-  padding: 2px 30px;
-  margin: 40px;
+  padding: 30px 40px;
+  margin: 0px 60px;
   border-radius: 5px;
-  border: 2px solid indigo;
 }
 
 .fa-solid {
-  font-size: 30px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 .fa-regular {
-  font-size: 30px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 .parf {
   font-size: 18px;
@@ -164,9 +173,16 @@ section img {
   }
 }
 
-/****** Tercera parte de la landing page ****/
+/*------------------------ Dog images ------------------------------------------*/
 .space {
   margin-top: 100px;
+}
+
+.title-dog-images {
+  color: #f1c71f; 
+  text-align: center; 
+  margin-bottom: 50px;
+  font-family: Lalezar;
 }
 
 /* contenerdores de los perros  */
@@ -211,6 +227,8 @@ section img {
   }
 }
 
+/*------------------------ Testimonials ------------------------------------------*/
+
 /* seccion de los testimonios */
 .testimonials {
   background-color: #e8d9fb;
@@ -231,7 +249,7 @@ section img {
   font-family: Inter;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 100px;
 }
 
 /* seccion de los box de los testimonios */
@@ -244,7 +262,7 @@ section img {
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  width: 40%; /* Ancho de cada testimonial-box */
+  width: 35%; /* Ancho de cada testimonial-box */
   box-sizing: border-box;
 
   & img {
@@ -268,9 +286,13 @@ section img {
   }
 
   & .user-testimonial {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     color: grey;
+  }
+
+  & .text-testimonial {
+    font-size: 15px;
   }
 }
 
@@ -299,14 +321,17 @@ section img {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+/*------------------------ Download ------------------------------------------*/
+
 .buttons_download {
-  background-color: #f1e129;
-  padding: 10px;
+  background-color: #F1CB38;
+  padding: 40px 10px;
   text-align: center;
 }
 
 .buttons_download h1 {
   font-family: Lalezar;
+  margin-bottom: 40px;
 }
 
 .buttonD-container {
@@ -315,6 +340,7 @@ section img {
   gap: 40px;
   margin-bottom: 20px;
 }
+
 .buttonD {
   background-color: transparent;
   border: none;
@@ -323,9 +349,11 @@ section img {
 }
 
 .buttonD img {
-  max-width: 100%;
+  max-width: 60%;
+  max-height: 60%;
   width: 500px;
-  height: 100px;
+  height: 120px;
+  border-radius: 10px;
 }
 
 .buttonSocial-container {
@@ -349,11 +377,17 @@ section img {
 
 .footer {
   font-family: Inter;
-  background-color: purple;
+  background-color: #8f52dc;
   color: white;
   text-align: left;
   height: auto;
   line-height: 27px; /* Establece la altura de línea a 10px */
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .menu .destacado {
@@ -369,12 +403,6 @@ section img {
   font-size: 35px; /* Tamaño de fuente más grande para el texto destacado */
 }
 
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .image {
   flex: 1;
   position: relative;
@@ -382,9 +410,8 @@ section img {
 }
 
 .image img {
-  max-width: 100%;
-  width: auto; /* Ancho de 20px */
-  height: auto; /* Altura de 15px */
+  width: 150px;
+  height: 25px;
 }
 
 .menu,
@@ -424,12 +451,37 @@ section img {
 
 .input-container {
   margin-top: 10px;
-  background-color: white;
+  background-color: transparent;
   border-radius: 5px;
   position: relative;
   display: flex;
   align-items: center;
+  width: 250px;
+  cursor: pointer;
+
+  & span{
+    padding-left: 50px;
+    color: white;
+  }
+  & .fa-envelope {
+    font-size: 32px;
+    color: white;
+  }
+  & i{
+    position: absolute;
+    padding: 0px 10px;
+    color: white;
+    margin-top: 20px;
+  }
+  & a {
+    color: white;
+    text-decoration: none;
+   
+  }
+
 }
+
+
 
 input[type="text"] {
   width: 100%;
@@ -458,3 +510,16 @@ input[type="text"] {
   position: relative;
 }
 
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  background-color: black;
+  color: #fff;
+  padding: 10px 15px 0px 15px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  z-index: 999;
+}
