@@ -3,7 +3,7 @@ function openContactPage() {
 }
 
 function openAboutUs() {
-    window.location.href = "index.html#caracteristicas";
+    window.location.href = "index.html#about-us";
 }
 
 function openPetSearch() {
@@ -11,44 +11,25 @@ function openPetSearch() {
 }
 
 function openTestimonials() {
-    window.location.href = "index.html#testimonios";
+    window.location.href = "index.html#testimonials";
 }
 
 function scrollToTop() {
     window.scrollTo(0, 0);
 }
 
-// make disappear elements of navbar when window is less than 700px and put a hamburger menu
-function showNavbar() {
-    var x = document.getElementById("navbar");
-    if (x.className === "navbar") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar";
-    }
+// function to detect user in input field and show a message after button is clicked
+function showName(event) {
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var message = "Hola " + username + ", bienvenido a PetSeek! ";
+    document.getElementById("message").innerHTML = message;
 }
 
-
-const menu = document.querySelector(".menu");
-const menuItems = document.querySelectorAll(".menuItem");
-const hamburger= document.querySelector(".hamburger");
-const closeIcon= document.querySelector(".closeIcon");
-const menuIcon = document.querySelector(".menuIcon");
-
-function toggleMenu() {
-  if (menu.classList.contains("showMenu")) {
-    menu.classList.remove("showMenu");
-    closeIcon.style.display = "none";
-    menuIcon.style.display = "block";
-  } else {
-    menu.classList.add("showMenu");
-    closeIcon.style.display = "block";
-    menuIcon.style.display = "none";
-  }
+function sendMessageConfirmation(event){
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var confirmationMessage = username + ", tu mensaje se envió correctamente!";
+    document.getElementById("confirmationMessage").innerHTML = confirmationMessage;
 }
-
-hamburger.addEventListener("click", toggleMenu);
-
-
-
   
