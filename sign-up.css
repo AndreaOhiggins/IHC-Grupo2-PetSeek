@@ -30,6 +30,7 @@ nav ul {
 
 nav li {
   margin: 10px 0;
+  padding: 0 70px;
 }
 
 .buttons {
@@ -39,8 +40,10 @@ nav li {
 /* Estilo para los enlaces "Sobre nosotros" y "Búsqueda de mascota" */
 .menu-link {
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 30px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* Estilo específico para los botones "Iniciar sesión" y "Registrarse" */

@@ -30,7 +30,7 @@ nav ul {
 
 nav li {
   margin: 10px 0;
-  
+  padding: 0 70px;
 }
 
 .buttons {
@@ -40,13 +40,11 @@ nav li {
 /* Estilo para los enlaces "Sobre nosotros" y "Búsqueda de mascota" */
 .menu-link {
   color: white;
-/* font-weight: bold; */
+  /* font-weight: bold; */
   font-size: 30px;
-  font-weight: bold;
   text-decoration: none;
   cursor: pointer;
 }
-
 
 /* Estilo específico para los botones "Iniciar sesión" y "Registrarse" */
 .button {
@@ -133,7 +131,7 @@ section img {
   background-position: center center;
   background-size: cover;
   padding: 30px 40px;
-  margin: 0px 60px;
+  margin: 15px 60px;
   border-radius: 5px;
 }
 
@@ -188,6 +186,7 @@ section img {
   font-family: Lalezar;
 }
 
+
 /* contenerdores de los perros  */
 .dogs-container {
   background-color: #ffffff;
@@ -230,6 +229,30 @@ section img {
   }
 }
 
+.about-product-title h1{
+  font-family: Lalezar;
+  color: #8f52dc;
+  text-align: center;
+  margin-bottom: -50px;
+  padding-bottom: 0;
+  margin-top: 100px;
+}
+
+.about-us-title h1{
+  font-family: Lalezar;
+  color: #f1c71f;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.video-about-us {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
 /*------------------------ Testimonials ------------------------------------------*/
 
 /* seccion de los testimonios */
@@ -246,6 +269,8 @@ section img {
   text-align: center;
   margin-bottom: 50px;
 }
+
+
 
 /* contenedor de los testimonios */
 .testimonials-container {
@@ -283,7 +308,7 @@ section img {
   }
 
   & .box-title {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 800;
     color: #000;
   }
@@ -295,9 +320,11 @@ section img {
   }
 
   & .text-testimonial {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
+
+
 
 /* seccion de las imágenes de los testimonios */
 .testimonial-box-left img,
@@ -483,8 +510,6 @@ section img {
   }
 
 }
-
-
 
 input[type="text"] {
   width: 100%;

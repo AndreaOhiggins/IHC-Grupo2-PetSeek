@@ -29,6 +29,7 @@ nav ul {
 
 nav li {
   margin: 10px 0;
+  padding: 0 70px;
 }
 
 .buttons {
@@ -37,8 +38,10 @@ nav li {
 
 .menu-link {
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
+  font-size: 30px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button {
