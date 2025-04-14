@@ -48,6 +48,8 @@ nav li {
 
 /* Estilo específico para los botones "Iniciar sesión" y "Registrarse" */
 .button {
+  display: flex;
+  gap: 1rem;
   background-color: black;
   color: white;
   padding: 10px 20px;
@@ -56,7 +58,11 @@ nav li {
   margin: 10px 0;
   font-weight: bold;
   border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
 
 /* Añadir un efecto al pasar el cursor sobre los botones */
 .button:hover {
